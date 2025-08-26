@@ -22,8 +22,8 @@ function confirmDonate(){
     if(value == isNaN(number) && number <= 5){
 
         Swal.fire({
-            title: "Formulário não enviado!",
-            text: "Preencha todos os campos antes de enviar.",
+            title: "Erro ao enviar!",
+            text: "Certifique-se de que preencheu todos os campos corretamente.",
             Color: "#e1e1e1",
             theme: "dark",
             icon: "error",
@@ -36,8 +36,9 @@ function confirmDonate(){
         
         Swal.fire({
             title: "Enviado!",
-            text: "Formulário enviado com sucesso.",
+            text: "Muito obrigado pela sua doação! Enviaremos um email de confirmação para você.",
             icon: "success",
+            theme: "dark",
             iconColor: "#4edb3f",
             confirmButtonText: "OK",
             confirmButtonColor: "#4edb3f"

@@ -97,6 +97,8 @@ form label{
 }
 
 .form form input{
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
     background-color: rgb(19, 19, 19);
     margin-top: 2%;
     margin-bottom: 4%;
@@ -112,7 +114,13 @@ form label{
 }
 
 form input:focus{
+    background-color: #131313;
     border-color: var(--verde)
+}
+
+form input:active{
+    background-color: #131313;
+    border-color: var(--verde);
 }
 
 form input::placeholder{
