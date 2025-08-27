@@ -31,19 +31,25 @@
                     <form id="form1">
                         <h2>Preencha os campos para a confirmção:</h2>
                         <label for="nome">Nome de Usuário</label>
-                        <input type="text" name="nome" placeholder="Digite seu nome de usuário" required>
+                        <input type="text" name="nome" id="valor" placeholder="Digite seu nome de usuário" required>
             
                         <label for="email">E-mail</label>
-                        <input type="email" name="email" placeholder="Digite seu e-mail" required>
+                        <input type="email" name="email" id="valor" placeholder="Digite seu e-mail" required>
             
                         <label for="telefone">Telefone</label>
-                        <input type="tel" name="telefone" placeholder="Digite seu número de telefone" required>
+                        <input type="tel" name="telefone" id="valor" placeholder="Digite seu número de telefone" required>
             
                         <label for="cpf">CPF</label>
-                        <input type="text" name="cpf" placeholder="Digite seu CPF" required>
+                        <input type="text" name="cpf" id="valor" placeholder="Digite seu CPF" required>
 
-                        <label for="valor">Valor da doação</label>
-                        <input type="text" id="valor" name="valor" placeholder="R$__.__" required>
+                        <label for="valor">Escolha o valor da doação</label>
+                        <select name="valor" id="valor">
+                            <option value="5">R$5</option>
+                            <option value="10">R$10</option>
+                            <option value="15">R$15</option>
+                            <option value="25">R$25</option>
+                            <option value="50">R$50</option>
+                        </select>
 
                         <label for="mensagem">Mensagem (opcional)</label>
                         <input type="mensagem" name="mensagem" placeholder="Escreva sua Mensagem">
@@ -62,15 +68,7 @@
 
     <footer id="footer">
         <div class="contatos">
-            <h3>Contatos</h3>
-
-            <ul>
-                <li><i class="fa-brands fa-github"></i></li>
-                <li><i class="fa-brands fa-whatsapp"></i></li>
-                <li><i class="fa-brands fa-instagram"></i></li>
-                <li><i class="fa-brands fa-linkedin"></i></li>
-                <li><i class="fa-regular fa-envelope"></i></li>
-            </ul>
+            
         </div>
 
         <h4>©2025 Protject by: Vinícius Oliveira Pineda</h4>

@@ -6,7 +6,7 @@ function apiconnect(){
         const formData = new FormData(e.target);
         const data = Object.fromEntries(formData.entries());
     
-        await fetch("https://primary-production-8518.up.railway.app/webhook-test/8584e79f-ab46-4e56-9912-1df590038d82", {
+        await fetch("https://n8n-n8n.0brmvo.easypanel.host/webhook-test/8584e79f-ab46-4e56-9912-1df590038d82", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(data)
@@ -16,10 +16,9 @@ function apiconnect(){
 
 function confirmDonate(){
 
-    let value = document.getElementById("valor").value.trim();
-    let number = Number(value)
+    let value = document.getElementById("valor");
 
-    if(value == isNaN(number) && number <= 5){
+    if(!value.value.trim()){
 
         Swal.fire({
             title: "Erro ao enviar!",
